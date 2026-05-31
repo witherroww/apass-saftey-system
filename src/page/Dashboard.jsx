@@ -8,7 +8,7 @@ import FlightMap from '@/components/apass/FlightMap';
 import LandingCandidates from '@/components/apass/LandingCandidates';
 import AltitudeGauge from '@/components/apass/AltitudeGauge';
 import SpeedGauge from '@/components/apass/SpeedGauge';
-import MaydayPanel from '@/components/apass/MaydayPanel';
+import MayDayPanel from '@/components/apass/MayDayPanel';
 import EventLog from '@/components/apass/EventLog';
 import WeatherStation from '@/components/apass/WeatherStation';
 import ADSBTraffic from '@/components/apass/ADSBTraffic';
@@ -160,7 +160,7 @@ export default function Dashboard() {
               longitude={telemetry.longitude}
               onTrafficUpdate={setAdsbTraffic}
             />
-            <MaydayPanel
+            <MayDayPanel
               telemetry={telemetry}
               timeToImpact={calculations.timeToImpact}
               landingCandidates={landingCandidates}
